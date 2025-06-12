@@ -114,7 +114,7 @@ export default {
             opacity: "1",
           },
           "50%": {
-            opacity: "0.5",
+            opacity: "0.7",
           },
         },
         float: {
@@ -122,15 +122,24 @@ export default {
             transform: "translateY(0px)",
           },
           "50%": {
-            transform: "translateY(-10px)",
+            transform: "translateY(-15px)",
+          },
+        },
+        "spin-slow": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "pulse-slow": "pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        float: "float 3s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        float: "float 4s ease-in-out infinite",
+        "spin-slow": "spin-slow 20s linear infinite",
       },
     },
   },
